@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 public class FormDataDisplayServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        //resp.setContentType("text/html;charset=UTF-8");
+        resp.setContentType("text/html;charset=UTF-8");
 
         PrintWriter out = resp.getWriter();
         out.println("<b>First name:</b> " + req.getParameter("name"));
